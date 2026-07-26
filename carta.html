@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Para Mariana 🤍</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="carta-body">
+    <div class="estrellas"></div>
+    <div class="paisaje-nocturno" aria-hidden="true">
+        <div class="luna-fondo"></div>
+        <div class="montana montana-lejana"></div>
+        <div class="montana montana-media"></div>
+        <div class="montana montana-cercana"></div>
+    </div>
+    <div id="petalos"></div>
+
+    <audio id="musica" loop>
+        <source src="musica/cancion.mp3" type="audio/mpeg">
+    </audio>
+    <button id="playMusic">🎵 Reproducir nuestra canción</button>
+
+    <main class="book" aria-label="Carta en forma de libro">
+        <section class="left-page">
+            <div class="corner top-left"></div>
+            <div class="corner bottom-left"></div>
+            <div class="page-content" id="paginaIzquierda"></div>
+        </section>
+
+        <div class="book-spine"><div class="spine-line"></div></div>
+
+        <section class="right-page">
+            <div class="corner top-right"></div>
+            <div class="corner bottom-right"></div>
+            <div class="page-content" id="paginaDerecha"></div>
+        </section>
+    </main>
+
+    <nav class="controls" aria-label="Navegación del libro">
+        <button id="prev">← Anterior</button>
+        <span id="progreso" aria-live="polite"></span>
+        <button id="next">Siguiente →</button>
+    </nav>
+
+    <script src="carta.js"></script>
+</body>
+</html>
